@@ -23,7 +23,7 @@ import numpy as np
 #################################################################################
 # Model Utils for Image Manipulation Classification
 #################################################################################
-class Conv2DSymPadding( _Conv ) :
+class Conv2DSymPadding( Conv2D ) :
     @interfaces.legacy_conv2d_support
     def __init__(self, filters,
                  kernel_size,
